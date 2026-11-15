@@ -90,6 +90,6 @@ npm.cmd run build --prefix frontend
 
 当前尚不支持 RIS、OCR、投稿 PDF 的自动参考文献重建、任意自定义宏展开、复杂 biblatex 多重引用与分区编号。没有匹配全文时不以摘要缺失信息断言“不支持”。语义判断是带出处的辅助审查，需人工复核；本次未配置真实 LLM 服务。
 
-后端模块：parsers / sources / verification / pdf / semantic / reporting / storage / engine / api / cli。Pydantic 约束模型、SQLite 缓存与逐条快照、单机串行任务队列。前端 React + TypeScript + Vite，不依赖外部 CDN。前端代码与构建均在 frontend 目录。
+后端模块：parsers / sources / verification / pdf / semantic / reporting / storage / engine / api / cli。Pydantic 约束模型、SQLite 缓存与逐条快照、单机串行任务队列。前端 React + TypeScript + Vite，不依赖外部 CDN。前端代码与构建均在 frontend 目录
 
 贡献前请运行默认离线测试，新增匹配规则应补充错误 DOI、歧义候选和边界情况测试。自有代码采用 Apache-2.0；第三方依赖及文献本身保留各自许可，参见 LICENSE 与 docs 的依赖清单
